@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main role="main">
+    <!-- Left side of the container -->
+    <div class="container">
+    <img src="./images/image-product-desktop.jpg" alt="picture of perfume" class="perfume">
+    <img src="./images/image-product-mobile.jpg" alt="picture of perfume" class="perfume_mobile">
+    <!-- Right side of the container -->
+    <!-- From header to paragraph -->
+    <div class="perfume_container">
+    <a class="preview" role="preview">PERFUME</a>
+    <h1 class="title" role="title"> Gabrielle Essence Eau De Parfum</h1>
+    <p class="text" role="text_desc">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.</p>
+      <!-- Container for prices -->
+    <div class="price_container">
+    <a class="price current" role="available_price">$149.99</a>
+    <a class="price previous" role="previous_price">$169.99</a>
+    </div>
+    <!-- Button for the cart -->
+    <button class="buy_cart"><img src="images/icon-cart.svg" alt="icon_cart"> Add to Cart</button>
+  </div>
+</div>
+  </main>
+  <!-- Footer section -->
+  <footer role="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/DefalterXD">DefalterXD</a>.
+  </footer>
+</body>
+</html>
