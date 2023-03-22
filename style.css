@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Outfit:wght@700&display=swap');
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+/* Left side of the container */
+.container {
+    display: flex;
+    max-width: 35ch;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.container .perfume{
+    max-width: 100%;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.container .perfume_mobile{
+    display: none;
+}
+/* End left side of the container */
+
+/* Right side of the container  */
+.perfume_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2em 3em 2em 2.2em;
+    max-width: 50ch;
+    flex: none;
+    border-radius: 0px 12px 12px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.preview {
+    letter-spacing: 5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+/* Title on the card */
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    /* Max-width for identical places of the word */
+    max-width: 10ch;
+    margin-top: -0.1em;
+}
+/* Paragraph */
+.perfume_container p {
+    font-size: 0.875rem;
+    line-height: 1.9em;
+    max-width: 25ch;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: -3.5em;   
+}
+/* End right side of the container */
+
+/* Start prices section */
+.price_container {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: -2.2em;
+}
+
+.price.current {
+    font-family: 'Fraunces', sans-serif;
+    color: rgb(65, 129, 99);
+    font-size: 2rem;
+}
+
+.price.previous {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+/* End prices section */
+
+/* Button section */
+.buy_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(65, 129, 99);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    gap: 14px;
+    padding: 1.1em 2em;
+    border: none;
+    border-radius: 0.7em;
+    transition-duration: 0.3s;
+}
+
+.buy_cart:hover {
+    background-color: hsl(157, 25%, 20%);
+    color: white;
+}
+/* End section button */
+
+/* Start footer section */
+footer { 
+    font-size: 1rem;
+    text-align: center; 
+}
+footer a { 
+    text-decoration: none;
+    color:hsl(218, 44%, 22%); 
+}
+/* End footer section */
+
+/* Responsive for phone */
+@media (max-width:500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .perfume{
+        display: none;
+    }
+
+    .container .perfume_mobile{
+        display: block;
+        max-width: 100%;
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    .perfume_container {
+        padding: 2em 1em 1.5em 1em;
+        height: 35ch;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    h1 {
+        max-width: 20ch;
+        margin-top: -1em;
+    }
+
+    .perfume_container p {
+        max-width: 30ch;
+    }
+
+    .price_container {
+        margin-bottom: -1.6em;
+    }
+
+    footer { 
+        font-size: 0.73rem; 
+    }
+
+}
+/* Responsive end */
